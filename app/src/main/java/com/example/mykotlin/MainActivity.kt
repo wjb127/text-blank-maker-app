@@ -19,7 +19,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private val client = OkHttpClient()
-    private val API_KEY = "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"
+    private val API_KEY = BuildConfig.OPENAI_API_KEY
     private val API_URL = "https://api.openai.com/v1/chat/completions"
 
     override fun onCreate(savedInstanceState: Bundle?) {

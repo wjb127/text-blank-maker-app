@@ -3,6 +3,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+// properties 변수를 여기서 정의
+val properties = org.jetbrains.kotlin.konan.properties.Properties().apply {
+    load(project.rootProject.file("local.properties").inputStream())
+}
+
 android {
     namespace = "com.example.textblankmaker"
     compileSdk = 34
@@ -16,28 +21,27 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        val properties = org.jetbrains.kotlin.konan.properties.Properties()
-        val localPropertiesFile = project.rootProject.file("local.properties")
-        if (localPropertiesFile.exists()) {
-            properties.load(localPropertiesFile.inputStream())
-            buildConfigField("String", "OPENAI_API_KEY", "\"${properties.getProperty("openai.api.key", "")}\"")
-        } else {
-            buildConfigField("String", "OPENAI_API_KEY", "\"your-api-key-here\"")
-        }
+        // OpenAI API 키 설정
+        buildConfigField(
+            "String",
+            "OPENAI_API_KEY",
+            "\"${properties.getProperty("openai.api.key", "")}\""
+        )
     }
 
     signingConfigs {
         create("release") {
-            storeFile = file("your-keystore-file.jks")
-            storePassword = "your-store-password"
-            keyAlias = "your-key-alias"
-            keyPassword = "your-key-password"
+            storeFile = file("release.jks")
+            storePassword = properties.getProperty("RELEASE_STORE_PASSWORD", "")
+            keyAlias = properties.getProperty("RELEASE_KEY_ALIAS", "")
+            keyPassword = properties.getProperty("RELEASE_KEY_PASSWORD", "")
         }
     }
 
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

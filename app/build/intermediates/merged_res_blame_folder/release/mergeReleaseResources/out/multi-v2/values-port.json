@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.textblankmaker.app-mergeReleaseResources-29:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/seungbeenwi/.gradle/caches/8.12.1/transforms/7785a3f7ee1cdd3c415b4ca62c24c55f/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

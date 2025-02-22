@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.textblankmaker.app-mergeReleaseResources-30:/layout/activity_main.xml",
+        "source": "com.example.textblankmaker.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.textblankmaker.app-mergeReleaseResources-30:/layout/activity_splash.xml",
+        "source": "com.example.textblankmaker.app-main-33:/layout/activity_splash.xml"
+    }
+]

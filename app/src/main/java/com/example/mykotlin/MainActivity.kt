@@ -16,35 +16,44 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.widget.Toast
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.snackbar.Snackbar
+import android.view.View
+import com.google.android.material.progressindicator.CircularProgressIndicator
 
 class MainActivity : AppCompatActivity() {
     private val client = OkHttpClient()
     private val API_KEY = BuildConfig.OPENAI_API_KEY
     private val API_URL = "https://api.openai.com/v1/chat/completions"
+    private lateinit var progressIndicator: CircularProgressIndicator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val inputText = findViewById<EditText>(R.id.inputText)
-        val generateButton = findViewById<Button>(R.id.generateButton)
-        val resultText = findViewById<EditText>(R.id.resultText)
-        val copyButton = findViewById<Button>(R.id.copyButton)
+        val inputText = findViewById<TextInputEditText>(R.id.inputText)
+        val generateButton = findViewById<MaterialButton>(R.id.generateButton)
+        val resultText = findViewById<TextInputEditText>(R.id.resultText)
+        val copyButton = findViewById<MaterialButton>(R.id.copyButton)
+        progressIndicator = findViewById(R.id.progressIndicator)
 
         generateButton.setOnClickListener {
             val text = inputText.text.toString()
             if (text.isEmpty()) {
-                Toast.makeText(this, "텍스트를 입력해주세요", Toast.LENGTH_SHORT).show()
+                showSnackbar("텍스트를 입력해주세요")
                 return@setOnClickListener
             }
             
             if (text.length > 1000) {
-                Toast.makeText(this, "텍스트가 너무 깁니다. 1000자 이내로 입력해주세요.", Toast.LENGTH_SHORT).show()
+                showSnackbar("텍스트가 너무 깁니다. 1000자 이내로 입력해주세요.")
                 return@setOnClickListener
             }
 
+            progressIndicator.visibility = View.VISIBLE
             makeApiCall(text) { response ->
                 runOnUiThread {
+                    progressIndicator.visibility = View.GONE
                     resultText.setText(response)
                 }
             }
@@ -54,8 +63,12 @@ class MainActivity : AppCompatActivity() {
             val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText("빈칸 문제", resultText.text.toString())
             clipboard.setPrimaryClip(clip)
-            Toast.makeText(this, "클립보드에 복사되었습니다", Toast.LENGTH_SHORT).show()
+            showSnackbar("클립보드에 복사되었습니다")
         }
+    }
+
+    private fun showSnackbar(message: String) {
+        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show()
     }
 
     private fun makeApiCall(text: String, callback: (String) -> Unit) {

@@ -24,103 +24,115 @@
 17-->[androidx.core:core:1.12.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/cd49bd55a7d47208248430a0feb8c27d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:4:5-17:19
+19-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:4:5-25:19
 20        android:allowBackup="true"
 20-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:5:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.12.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/cd49bd55a7d47208248430a0feb8c27d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 22        android:debuggable="true"
 23        android:extractNativeLibs="false"
-24        android:label="text-blank-maker"
-24-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:6:9-41
-25        android:supportsRtl="true"
-25-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:7:9-35
-26        android:testOnly="true"
-27        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
-27-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:8:9-67
-28        <activity
-28-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:9:9-16:20
-29            android:name="com.example.textblankmaker.MainActivity"
-29-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:10:13-41
-30            android:exported="true" >
-30-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:11:13-36
-31            <intent-filter>
-31-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:12:13-15:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:13:17-69
-32-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:13:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:14:17-77
-34-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:14:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <provider
-38-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-39            android:name="androidx.startup.InitializationProvider"
-39-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-40            android:authorities="com.example.textblankmaker.androidx-startup"
-40-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-41            android:exported="false" >
-41-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-42            <meta-data
-42-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-43-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-44                android:value="androidx.startup" />
-44-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-45            <meta-data
-45-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-46-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-47                android:value="androidx.startup" />
-47-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:6:9-43
+25        android:label="@string/app_name"
+25-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:7:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:8:9-54
+27        android:supportsRtl="true"
+27-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:9:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.TextBlankMaker" >
+29-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:10:9-52
+30        <activity
+30-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:12:9-20:20
+31            android:name="com.example.textblankmaker.SplashActivity"
+31-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:13:13-43
+32            android:exported="true"
+32-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:14:13-36
+33            android:theme="@style/Theme.TextBlankMaker.NoActionBar" >
+33-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:15:13-68
+34            <intent-filter>
+34-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:16:13-19:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:17:17-69
+35-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:17:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:18:17-77
+37-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:18:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:22:9-24:39
+41            android:name="com.example.textblankmaker.MainActivity"
+41-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:23:13-41
+42            android:exported="false" />
+42-->/Users/seungbeenwi/Project/text-blank-maker/app/src/main/AndroidManifest.xml:24:13-37
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+46            android:authorities="com.example.textblankmaker.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
 48            <meta-data
-48-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-49                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-49-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+48-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
 50                android:value="androidx.startup" />
-50-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-51        </provider>
-52
-53        <receiver
-53-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-54            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-55            android:directBootAware="false"
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-56            android:enabled="true"
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-57            android:exported="true"
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-58            android:permission="android.permission.DUMP" >
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-59            <intent-filter>
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-60                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-61            </intent-filter>
-62            <intent-filter>
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-63                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-64            </intent-filter>
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/a3714ea3ccc7c57624f6ff84213b19f4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+56                android:value="androidx.startup" />
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+57        </provider>
+58
+59        <receiver
+59-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+60            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+61            android:directBootAware="false"
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+62            android:enabled="true"
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+63            android:exported="true"
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+64            android:permission="android.permission.DUMP" >
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 65            <intent-filter>
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-66                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+66                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 67            </intent-filter>
 68            <intent-filter>
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-69                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+69                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 70            </intent-filter>
-71        </receiver>
-72    </application>
-73
-74</manifest>
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+72                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+73            </intent-filter>
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+75                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d82b22c94aa9fb6010f1a58e8ed38550/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+76            </intent-filter>
+77        </receiver>
+78    </application>
+79
+80</manifest>

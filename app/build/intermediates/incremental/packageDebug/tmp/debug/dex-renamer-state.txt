@@ -1,4 +1,4 @@
-#Sat Feb 22 15:42:26 KST 2025
+#Sat Feb 22 16:45:36 KST 2025
 base.0=/Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex

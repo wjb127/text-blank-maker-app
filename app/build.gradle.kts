@@ -20,7 +20,9 @@ android {
         val localPropertiesFile = project.rootProject.file("local.properties")
         if (localPropertiesFile.exists()) {
             properties.load(localPropertiesFile.inputStream())
-            buildConfigField("String", "OPENAI_API_KEY", "\"${properties.getProperty("OPENAI_API_KEY", "")}\"")
+            buildConfigField("String", "OPENAI_API_KEY", "\"${properties.getProperty("openai.api.key", "")}\"")
+        } else {
+            buildConfigField("String", "OPENAI_API_KEY", "\"your-api-key-here\"")
         }
     }
 
@@ -42,6 +44,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 

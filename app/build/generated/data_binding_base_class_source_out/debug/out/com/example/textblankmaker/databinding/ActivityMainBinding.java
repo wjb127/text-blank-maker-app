@@ -4,46 +4,58 @@ package com.example.textblankmaker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.textblankmaker.R;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.progressindicator.CircularProgressIndicator;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button copyButton;
+  public final MaterialButton copyButton;
 
   @NonNull
-  public final Button generateButton;
+  public final MaterialButton generateButton;
 
   @NonNull
-  public final EditText inputText;
+  public final TextInputEditText inputText;
 
   @NonNull
-  public final EditText resultText;
+  public final CircularProgressIndicator progressIndicator;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button copyButton,
-      @NonNull Button generateButton, @NonNull EditText inputText, @NonNull EditText resultText) {
+  @NonNull
+  public final TextInputEditText resultText;
+
+  @NonNull
+  public final MaterialToolbar topAppBar;
+
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull MaterialButton copyButton, @NonNull MaterialButton generateButton,
+      @NonNull TextInputEditText inputText, @NonNull CircularProgressIndicator progressIndicator,
+      @NonNull TextInputEditText resultText, @NonNull MaterialToolbar topAppBar) {
     this.rootView = rootView;
     this.copyButton = copyButton;
     this.generateButton = generateButton;
     this.inputText = inputText;
+    this.progressIndicator = progressIndicator;
     this.resultText = resultText;
+    this.topAppBar = topAppBar;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -69,31 +81,43 @@ public final class ActivityMainBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.copyButton;
-      Button copyButton = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton copyButton = ViewBindings.findChildViewById(rootView, id);
       if (copyButton == null) {
         break missingId;
       }
 
       id = R.id.generateButton;
-      Button generateButton = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton generateButton = ViewBindings.findChildViewById(rootView, id);
       if (generateButton == null) {
         break missingId;
       }
 
       id = R.id.inputText;
-      EditText inputText = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText inputText = ViewBindings.findChildViewById(rootView, id);
       if (inputText == null) {
         break missingId;
       }
 
+      id = R.id.progressIndicator;
+      CircularProgressIndicator progressIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (progressIndicator == null) {
+        break missingId;
+      }
+
       id = R.id.resultText;
-      EditText resultText = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText resultText = ViewBindings.findChildViewById(rootView, id);
       if (resultText == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, copyButton, generateButton, inputText,
-          resultText);
+      id = R.id.topAppBar;
+      MaterialToolbar topAppBar = ViewBindings.findChildViewById(rootView, id);
+      if (topAppBar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((CoordinatorLayout) rootView, copyButton, generateButton,
+          inputText, progressIndicator, resultText, topAppBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+id counterText
+id incrementButton
+id resetButton
+layout activity_main
+string app_name
+string counter_text
+string increment
+string reset
+style Theme.MyKotlin

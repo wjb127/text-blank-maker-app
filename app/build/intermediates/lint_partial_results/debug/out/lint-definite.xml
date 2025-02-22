@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="incidents">
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/mykotlin/MainActivity.kt"
+            line="19"
+            column="28"
+            startOffset="621"
+            endLine="19"
+            endColumn="43"
+            endOffset="636"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/mykotlin/MainActivity.kt"
+            line="23"
+            column="32"
+            startOffset="736"
+            endLine="23"
+            endColumn="47"
+            endOffset="751"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/mykotlin/MainActivity.kt"
+            line="28"
+            column="32"
+            startOffset="859"
+            endLine="28"
+            endColumn="47"
+            endOffset="874"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="13"
+            column="9"
+            startOffset="251"
+            endLine="13"
+            endColumn="23"
+            endOffset="265"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-core-core-ktx3"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-core-core-ktx3 = &quot;1.12.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-core-core-ktx3 = &quot;1.12.0&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-core-core-ktx3 = { module = &quot;androidx.core:core-ktx&quot;, version.ref = &quot;androidx-core-core-ktx3&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-core-core-ktx3 = { module = &quot;androidx.core:core-ktx&quot;, version.ref = &quot;androidx-core-core-ktx3&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.core.core.ktx3"
+                robot="true"
+                replacement="libs.androidx.core.core.ktx3">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="919"
+                    endOffset="950"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="21"
+            startOffset="920"
+            endLine="42"
+            endColumn="50"
+            endOffset="949"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-appcompat-appcompat3"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-appcompat-appcompat3 = &quot;1.6.1&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-appcompat-appcompat3 = &quot;1.6.1&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-appcompat-appcompat3 = { module = &quot;androidx.appcompat:appcompat&quot;, version.ref = &quot;androidx-appcompat-appcompat3&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-appcompat-appcompat3 = { module = &quot;androidx.appcompat:appcompat&quot;, version.ref = &quot;androidx-appcompat-appcompat3&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.appcompat.appcompat3"
+                robot="true"
+                replacement="libs.androidx.appcompat.appcompat3">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="971"
+                    endOffset="1007"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="43"
+            column="21"
+            startOffset="972"
+            endLine="43"
+            endColumn="55"
+            endOffset="1006"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-android-material-material3"
+            robot="true">
+            <fix-replace
+                description="Replace with com-google-android-material-material3 = &quot;1.11.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-android-material-material3 = &quot;1.11.0&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-google-android-material-material3 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;com-google-android-material-material3&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-android-material-material3 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;com-google-android-material-material3&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.android.material.material3"
+                robot="true"
+                replacement="libs.com.google.android.material.material3">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1028"
+                    endOffset="1073"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="44"
+            column="21"
+            startOffset="1029"
+            endLine="44"
+            endColumn="64"
+            endOffset="1072"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-constraintlayout-constraintlayout3"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-constraintlayout-constraintlayout3 = &quot;2.1.4&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-constraintlayout-constraintlayout3 = &quot;2.1.4&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-constraintlayout-constraintlayout3 = { module = &quot;androidx.constraintlayout:constraintlayout&quot;, version.ref = &quot;androidx-constraintlayout-constraintlayout3&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-constraintlayout-constraintlayout3 = { module = &quot;androidx.constraintlayout:constraintlayout&quot;, version.ref = &quot;androidx-constraintlayout-constraintlayout3&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.constraintlayout.constraintlayout3"
+                robot="true"
+                replacement="libs.androidx.constraintlayout.constraintlayout3">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1094"
+                    endOffset="1144"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="45"
+            column="21"
+            startOffset="1095"
+            endLine="45"
+            endColumn="69"
+            endOffset="1143"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for junit-junit2"
+            robot="true">
+            <fix-replace
+                description="Replace with junit-junit2 = &quot;4.13.2&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="junit-junit2 = &quot;4.13.2&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="175"
+                    endOffset="175"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with junit-junit2 = { module = &quot;junit:junit&quot;, version.ref = &quot;junit-junit2&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="junit-junit2 = { module = &quot;junit:junit&quot;, version.ref = &quot;junit-junit2&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="257"
+                    endOffset="257"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.junit.junit2"
+                robot="true"
+                replacement="libs.junit.junit2">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1199"
+                    endOffset="1219"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="48"
+            column="25"
+            startOffset="1200"
+            endLine="48"
+            endColumn="43"
+            endOffset="1218"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-test-ext-junit"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-test-ext-junit2 = &quot;1.1.5&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-test-ext-junit2 = &quot;1.1.5&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-test-ext-junit = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidx-test-ext-junit2&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-test-ext-junit = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidx-test-ext-junit2&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.test.ext.junit"
+                robot="true"
+                replacement="libs.androidx.test.ext.junit">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1251"
+                    endOffset="1282"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="32"
+            startOffset="1252"
+            endLine="49"
+            endColumn="61"
+            endOffset="1281"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-test-espresso-espresso-core"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-test-espresso-espresso-core = &quot;3.5.1&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-test-espresso-espresso-core = &quot;3.5.1&quot;&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="154"
+                    endOffset="154"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-test-espresso-espresso-core = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidx-test-espresso-espresso-core&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-test-espresso-espresso-core = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidx-test-espresso-espresso-core&quot; }&#xA;">
+                <range
+                    file="$HOME/Project/MyKotlin/gradle/libs.versions.toml"
+                    startOffset="188"
+                    endOffset="188"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.test.espresso.espresso.core"
+                robot="true"
+                replacement="libs.androidx.test.espresso.espresso.core">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1314"
+                    endOffset="1358"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="50"
+            column="32"
+            startOffset="1315"
+            endLine="50"
+            endColumn="74"
+            endOffset="1357"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.15.0">
+        <fix-replace
+            description="Change to 1.15.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.15.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="21"
+            startOffset="920"
+            endLine="42"
+            endColumn="50"
+            endOffset="949"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="43"
+            column="21"
+            startOffset="972"
+            endLine="43"
+            endColumn="55"
+            endOffset="1006"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.11.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="44"
+            column="21"
+            startOffset="1029"
+            endLine="44"
+            endColumn="64"
+            endOffset="1072"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.0">
+        <fix-replace
+            description="Change to 2.2.0"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="45"
+            column="21"
+            startOffset="1095"
+            endLine="45"
+            endColumn="69"
+            endOffset="1143"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="32"
+            startOffset="1252"
+            endLine="49"
+            endColumn="61"
+            endOffset="1281"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="50"
+            column="32"
+            startOffset="1315"
+            endLine="50"
+            endColumn="74"
+            endOffset="1357"/>
+    </incident>
+
+</incidents>

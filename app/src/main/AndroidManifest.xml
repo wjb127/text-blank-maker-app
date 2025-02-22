@@ -25,5 +25,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+        
+        <meta-data
+            android:name="privacy_policy_url"
+            android:value="https://github.com/wjb127/text-blank-maker-app" />
     </application>
 </manifest> 

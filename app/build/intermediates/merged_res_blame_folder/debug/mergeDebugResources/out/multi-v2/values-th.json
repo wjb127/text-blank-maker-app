@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.textblankmaker.app-mergeDebugResources-29:/values-th/values-th.xml",
+            "outputFile": "com.seungbeen.textblankmaker.app-mergeDebugResources-29:/values-th/values-th.xml",
             "map": [
                 {
                     "source": "/Users/seungbeenwi/.gradle/caches/8.12.1/transforms/1ae442a085ffa496e8f3aa23faa70cdd/transformed/material-1.11.0/res/values-th/values-th.xml",

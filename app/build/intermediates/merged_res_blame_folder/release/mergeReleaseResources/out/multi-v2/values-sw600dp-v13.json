@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.textblankmaker.app-mergeReleaseResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.seungbeen.textblankmaker.app-mergeReleaseResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/seungbeenwi/.gradle/caches/8.12.1/transforms/1ae442a085ffa496e8f3aa23faa70cdd/transformed/material-1.11.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

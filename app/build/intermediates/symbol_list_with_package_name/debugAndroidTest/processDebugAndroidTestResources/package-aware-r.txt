@@ -1,0 +1,3 @@
+com.seungbeen.textblankmaker.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

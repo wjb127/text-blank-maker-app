@@ -6,7 +6,7 @@
     <color name="secondary">#03DAC6</color>
     <color name="secondary_dark">#018786</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">text-blank-maker</string>
+    <string name="app_name">텍스트 통암기</string>
     <style name="Theme.TextBlankMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/primary</item>

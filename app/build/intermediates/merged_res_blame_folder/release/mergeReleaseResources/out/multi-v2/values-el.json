@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.textblankmaker.app-mergeReleaseResources-29:/values-el/values-el.xml",
+            "outputFile": "com.seungbeen.textblankmaker.app-mergeReleaseResources-29:/values-el/values-el.xml",
             "map": [
                 {
                     "source": "/Users/seungbeenwi/.gradle/caches/8.12.1/transforms/7785a3f7ee1cdd3c415b4ca62c24c55f/transformed/appcompat-1.6.1/res/values-el/values-el.xml",

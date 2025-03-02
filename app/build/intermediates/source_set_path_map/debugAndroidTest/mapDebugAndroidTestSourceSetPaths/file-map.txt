@@ -1,0 +1,6 @@
+com.seungbeen.textblankmaker.test.app-core-1.5.0-0 /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/498e72f0c77f1c2504fd8590ffc741be/transformed/core-1.5.0/res
+com.seungbeen.textblankmaker.test.app-annotation-experimental-1.3.0-1 /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/7e5fb2d2fa8370b1a4531402e87d046a/transformed/annotation-experimental-1.3.0/res
+com.seungbeen.textblankmaker.test.app-androidTest-2 /Users/seungbeenwi/Project/text-blank-maker/app/build/generated/res/resValues/androidTest/debug
+com.seungbeen.textblankmaker.test.app-mergeDebugAndroidTestResources-3 /Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.seungbeen.textblankmaker.test.app-mergeDebugAndroidTestResources-4 /Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.seungbeen.textblankmaker.test.app-debugAndroidTest-5 /Users/seungbeenwi/Project/text-blank-maker/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

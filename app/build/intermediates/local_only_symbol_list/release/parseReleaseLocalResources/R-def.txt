@@ -9,11 +9,12 @@ color white
 drawable ic_launcher_background
 id copyButton
 id generateButton
+id inputLayout
 id inputText
-id progressIndicator
-id resultText
+id outputLayout
+id outputText
+id progressBar
 id splashIcon
-id topAppBar
 layout activity_main
 layout activity_splash
 mipmap ic_launcher

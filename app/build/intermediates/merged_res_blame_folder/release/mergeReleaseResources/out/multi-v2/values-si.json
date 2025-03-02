@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.textblankmaker.app-mergeReleaseResources-29:/values-si/values-si.xml",
+            "outputFile": "com.seungbeen.textblankmaker.app-mergeReleaseResources-29:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/seungbeenwi/.gradle/caches/8.12.1/transforms/1ae442a085ffa496e8f3aa23faa70cdd/transformed/material-1.11.0/res/values-si/values-si.xml",

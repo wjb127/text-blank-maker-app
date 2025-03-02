@@ -9,14 +9,14 @@ val properties = org.jetbrains.kotlin.konan.properties.Properties().apply {
 }
 
 android {
-    namespace = "com.example.textblankmaker"
+    namespace = "com.seungbeen.textblankmaker"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.textblankmaker"
+        applicationId = "com.seungbeen.textblankmaker"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
+        versionCode = 3
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -32,9 +32,9 @@ android {
     signingConfigs {
         create("release") {
             storeFile = file("release.jks")
-            storePassword = properties.getProperty("RELEASE_STORE_PASSWORD", "")
-            keyAlias = properties.getProperty("RELEASE_KEY_ALIAS", "")
-            keyPassword = properties.getProperty("RELEASE_KEY_PASSWORD", "")
+            storePassword = properties.getProperty("RELEASE_STORE_PASSWORD")
+            keyAlias = properties.getProperty("RELEASE_KEY_ALIAS")
+            keyPassword = properties.getProperty("RELEASE_KEY_PASSWORD")
         }
     }
 
@@ -50,11 +50,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         viewBinding = true

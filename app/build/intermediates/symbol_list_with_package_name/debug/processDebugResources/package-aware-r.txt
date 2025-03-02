@@ -1,4 +1,4 @@
-com.example.textblankmaker
+com.seungbeen.textblankmaker
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -3307,6 +3307,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inputLayout
 id inputText
 id invisible
 id inward
@@ -3420,6 +3421,8 @@ id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
 id outline
+id outputLayout
+id outputText
 id outward
 id overshoot
 id packed
@@ -3437,14 +3440,13 @@ id pin
 id position
 id postLayout
 id pressed
-id progressIndicator
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
 id report_drawn
-id resultText
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3550,7 +3552,6 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id top
-id topAppBar
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -5221,3 +5222,6 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml backup_rules
+xml data_extraction_rules
+xml network_security_config

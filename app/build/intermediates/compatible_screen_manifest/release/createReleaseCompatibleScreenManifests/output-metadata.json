@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.example.textblankmaker",
+  "applicationId": "com.seungbeen.textblankmaker",
   "variantName": "release",
   "elements": []
 }

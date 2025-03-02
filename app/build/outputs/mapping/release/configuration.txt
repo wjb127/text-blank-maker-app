@@ -2,8 +2,8 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
--keep class com.example.textblankmaker.MainActivity { <init>(); }
--keep class com.example.textblankmaker.SplashActivity { <init>(); }
+-keep class com.seungbeen.textblankmaker.MainActivity { <init>(); }
+-keep class com.seungbeen.textblankmaker.SplashActivity { <init>(); }
 -keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
@@ -54,15 +54,11 @@
 
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class com.google.android.material.appbar.AppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.card.MaterialCardView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -79,8 +75,6 @@
 -keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.internal.TouchObserverFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.progressindicator.CircularProgressIndicator { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -446,7 +440,7 @@
 }
 
 # End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/cd49bd55a7d47208248430a0feb8c27d/transformed/core-1.12.0/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/67d69b526dfdbc33e7eb7b49edbb8d34/transformed/jetified-savedstate-1.2.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/17f44327c5297092bdaab0bf4f8b5f09/transformed/savedstate-1.2.1/proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -465,11 +459,11 @@
     <init>();
 }
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/67d69b526dfdbc33e7eb7b49edbb8d34/transformed/jetified-savedstate-1.2.1/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/proguard.txt
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/17f44327c5297092bdaab0bf4f8b5f09/transformed/savedstate-1.2.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/553d37b00c8a94d11e59abccbd336741/transformed/lifecycle-process-2.6.1/proguard.txt
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
 -keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/3e86b1df9cf97731cfd636c0abf4a7a0/transformed/jetified-lifecycle-process-2.6.1/proguard.txt
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/553d37b00c8a94d11e59abccbd336741/transformed/lifecycle-process-2.6.1/proguard.txt
 # The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/66eba2d996f9771ae51285c79c85a7b8/transformed/lifecycle-viewmodel-2.6.1/proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
@@ -505,7 +499,7 @@
 # Also this rule prevents registerIn from being inlined.
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
 # End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/dc5ec87a72c230446997a3346aa4f820/transformed/lifecycle-runtime-2.6.1/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/c587180f2b9805263aa0855b8d8eaa9e/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/98bed3c2b502aadb3bdd9a2af9c6bb31/transformed/lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>(androidx.lifecycle.SavedStateHandle);
 }
@@ -514,8 +508,8 @@
     <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
 }
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/c587180f2b9805263aa0855b8d8eaa9e/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/640428597036ccc1e58b1cccbe99856e/transformed/rules/lib/META-INF/proguard/okhttp3.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/98bed3c2b502aadb3bdd9a2af9c6bb31/transformed/lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/7b8700c1dd21fab823a2abb2d8a2967e/transformed/rules/lib/META-INF/proguard/okhttp3.pro
 # JSR 305 annotations are for embedding nullability information.
 -dontwarn javax.annotation.**
 
@@ -528,12 +522,12 @@
 # OkHttp platform used only on JVM and when Conscrypt dependency is available.
 -dontwarn okhttp3.internal.platform.ConscryptPlatform
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/640428597036ccc1e58b1cccbe99856e/transformed/rules/lib/META-INF/proguard/okhttp3.pro
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/2247a2ba1a1f8fba87880f0edddc5bb4/transformed/rules/lib/META-INF/proguard/okio.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/7b8700c1dd21fab823a2abb2d8a2967e/transformed/rules/lib/META-INF/proguard/okhttp3.pro
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/19404ce11131b882e33855e65b4299db/transformed/rules/lib/META-INF/proguard/okio.pro
 # Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
 -dontwarn org.codehaus.mojo.animal_sniffer.*
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/2247a2ba1a1f8fba87880f0edddc5bb4/transformed/rules/lib/META-INF/proguard/okio.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/19404ce11131b882e33855e65b4299db/transformed/rules/lib/META-INF/proguard/okio.pro
 # The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/b851da94c31b45a77e07f81c0ac431c7/transformed/versionedparcelable-1.1.1/proguard.txt
 -keep class * implements androidx.versionedparcelable.VersionedParcelable
 -keep public class android.support.**Parcelizer { *; }
@@ -541,7 +535,7 @@
 -keep public class androidx.versionedparcelable.ParcelImpl
 
 # End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/b851da94c31b45a77e07f81c0ac431c7/transformed/versionedparcelable-1.1.1/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/519822dbe4df60998bc12828e44b8fbe/transformed/jetified-startup-runtime-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d24d1f1259ce1fc9d496d2c2f0ea6851/transformed/startup-runtime-1.1.1/proguard.txt
 # It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
 -keepnames class * extends androidx.startup.Initializer
 
@@ -555,8 +549,8 @@
 
 -assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/519822dbe4df60998bc12828e44b8fbe/transformed/jetified-startup-runtime-1.1.1/proguard.txt
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/feedc3f404e93ccafa4481424bd8fff5/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/d24d1f1259ce1fc9d496d2c2f0ea6851/transformed/startup-runtime-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/95c0f6281506391bc079e138c67da4c6/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}
 
@@ -576,8 +570,8 @@
   @androidx.annotation.DoNotInline <methods>;
 }
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/feedc3f404e93ccafa4481424bd8fff5/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/6db31cdb89183eb8766965e7f9ba2929/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/95c0f6281506391bc079e138c67da4c6/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/2fb75be763d77e023665a36aee3766ed/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
 # Allow R8 to optimize away the FastServiceLoader.
 # Together with ServiceLoader optimization in R8
 # this results in direct instantiation when loading Dispatchers.Main
@@ -601,8 +595,8 @@
     boolean getRECOVER_STACK_TRACES() return false;
 }
 
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/6db31cdb89183eb8766965e7f9ba2929/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
-# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/8ec8858cdcaa8dc18f8805dfac5642e4/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/2fb75be763d77e023665a36aee3766ed/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# The proguard configuration file for the following section is /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/986f81211bcfd607c3e1242822ae18f5/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
 # When editing this file, update the following files as well:
 # - META-INF/proguard/coroutines.pro
 # - META-INF/com.android.tools/proguard/coroutines.pro
@@ -630,7 +624,7 @@
 
 # An annotation used for build tooling, won't be directly accessed.
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
-# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/8ec8858cdcaa8dc18f8805dfac5642e4/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# End of content from /Users/seungbeenwi/.gradle/caches/8.12.1/transforms/986f81211bcfd607c3e1242822ae18f5/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
 # The proguard configuration file for the following section is <unknown>
 
 # End of content from <unknown>

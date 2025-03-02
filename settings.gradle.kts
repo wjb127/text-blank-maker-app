@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyKotlin"
+rootProject.name = "text-blank-maker"
 include(":app")

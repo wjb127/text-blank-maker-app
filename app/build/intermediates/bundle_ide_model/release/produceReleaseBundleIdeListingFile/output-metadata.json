@@ -4,7 +4,7 @@
     "type": "BUNDLE",
     "kind": "RegularFile"
   },
-  "applicationId": "com.example.textblankmaker",
+  "applicationId": "com.seungbeen.textblankmaker",
   "variantName": "release",
   "elements": [
     {

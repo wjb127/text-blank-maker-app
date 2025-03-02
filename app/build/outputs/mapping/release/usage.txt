@@ -43,6 +43,20 @@ com.google.errorprone.annotations.concurrent.GuardedBy
 com.google.errorprone.annotations.concurrent.LazyInit
 com.google.errorprone.annotations.concurrent.LockMethod
 com.google.errorprone.annotations.concurrent.UnlockMethod
+com.seungbeen.textblankmaker.BuildConfig
+com.seungbeen.textblankmaker.R$color
+com.seungbeen.textblankmaker.R$drawable
+com.seungbeen.textblankmaker.R$id:
+    public static int splashIcon
+    private void <init>()
+com.seungbeen.textblankmaker.R$layout:
+    private void <init>()
+com.seungbeen.textblankmaker.R$mipmap
+com.seungbeen.textblankmaker.R$string
+com.seungbeen.textblankmaker.R$style
+com.seungbeen.textblankmaker.R$xml
+com.seungbeen.textblankmaker.R
+com.seungbeen.textblankmaker.databinding.ActivitySplashBinding
 kotlinx.coroutines.AbstractCoroutine:
     public static synthetic void getContext$annotations()
 kotlinx.coroutines.AbstractTimeSource:
@@ -2864,8 +2878,6 @@ okio.internal.SegmentedByteStringKt:
     private static final void forEachSegment(okio.SegmentedByteString,int,int,kotlin.jvm.functions.Function3)
     public static final void forEachSegment(okio.SegmentedByteString,kotlin.jvm.functions.Function3)
 okio.internal._Utf8Kt
-org.example.App
-org.example.AppKt
 org.intellij.lang.annotations.Flow
 org.intellij.lang.annotations.Identifier
 org.intellij.lang.annotations.JdkConstants$AdjustableOrientation
@@ -3008,6 +3020,16 @@ com.google.android.material.textfield.TextInputLayout$$InternalSyntheticApiModel
 com.google.android.material.textfield.TextInputLayout$$InternalSyntheticApiModelOutline$1$218cec2931404bf91c10c6b74bb7cb6c389a3f0d8110a580fbfe9dfa961f42dd$2
 com.google.android.material.textfield.TextInputLayout$$InternalSyntheticApiModelOutline$1$218cec2931404bf91c10c6b74bb7cb6c389a3f0d8110a580fbfe9dfa961f42dd$3
 com.google.android.material.textfield.TextInputLayout$$InternalSyntheticApiModelOutline$1$218cec2931404bf91c10c6b74bb7cb6c389a3f0d8110a580fbfe9dfa961f42dd$4
+com.seungbeen.textblankmaker.MainActivity$onCreate$1$1:
+    public final void invoke(java.lang.String)
+com.seungbeen.textblankmaker.MainActivity:
+    public static void makeApiCall()
+com.seungbeen.textblankmaker.R$id
+com.seungbeen.textblankmaker.R$layout
+com.seungbeen.textblankmaker.databinding.ActivityMainBinding:
+    public final com.google.android.material.textfield.TextInputLayout inputLayout
+    public final com.google.android.material.textfield.TextInputLayout outputLayout
+    public static androidx.constraintlayout.widget.ConstraintLayout getRoot()
 kotlin.SafePublicationLazyImpl$$InternalSyntheticBackportWithForwarding$1$c8bcab98836025e86a32ae434ea49a122413c117ff16708b4fda560764723aa2$0
 kotlin.UByte$$InternalSyntheticBackport$1$126b1938ebc4f92a84e71789942e9cdd11926d6898789d444f3a5f444fe8191b$0
 kotlin.UByte$$InternalSyntheticBackport$1$15bc06269c42a2507b77fb66202691fe9ece310c6dc882762a9666217c005a02$0
@@ -3817,8 +3839,8 @@ okhttp3.CacheControl:
     public static boolean noCache()
     public static boolean noStore()
     public static boolean onlyIfCached()
-okhttp3.Call:
-    public abstract void enqueue()
+okhttp3.Call
+okhttp3.Callback
 okhttp3.CertificatePinner$$InternalSyntheticThrowCCEIfNotNull$8$65c720c03ab18cdb70e359ae7154e4835ba9bf3740df13f514f6c060ad84f1a4$0
 okhttp3.CertificatePinner$$InternalSyntheticThrowCCEIfNotNull$84$862b9fb0ecaf4f7418d12bced84805c62fdfa407d0bca9dd3fa2c96667c26399$0
 okhttp3.CertificatePinner$$InternalSyntheticThrowCCEIfNotNull$84$862b9fb0ecaf4f7418d12bced84805c62fdfa407d0bca9dd3fa2c96667c26399$1
@@ -4008,20 +4030,20 @@ okhttp3.EventListener$Companion$NONE$1:
     public static void canceled()
     public static void connectFailed()
     public static void connectStart()
-    public static void connectionAcquired(okhttp3.Call,okhttp3.Connection)
-    public static void connectionReleased(okhttp3.Call,okhttp3.Connection)
+    public static void connectionAcquired(okhttp3.internal.connection.RealCall,okhttp3.Connection)
+    public static void connectionReleased(okhttp3.internal.connection.RealCall,okhttp3.Connection)
     public static void dnsEnd()
     public static void dnsStart()
     public static void proxySelectEnd()
     public static void proxySelectStart()
     public static void requestBodyEnd()
     public static void requestBodyStart()
-    public static void requestFailed(okhttp3.Call,java.io.IOException)
+    public static void requestFailed(okhttp3.internal.connection.RealCall,java.io.IOException)
     public static void requestHeadersEnd()
     public static void requestHeadersStart()
     public static void responseBodyEnd()
-    public static void responseBodyStart(okhttp3.Call)
-    public static void responseFailed(okhttp3.Call,java.io.IOException)
+    public static void responseBodyStart(okhttp3.internal.connection.RealCall)
+    public static void responseFailed(okhttp3.internal.connection.RealCall,java.io.IOException)
     public static void responseHeadersEnd()
     public static void responseHeadersStart()
     public static void satisfactionFailure()
@@ -4171,7 +4193,7 @@ okhttp3.OkHttpClient:
     public static javax.net.ssl.HostnameVerifier hostnameVerifier()
     public static java.util.List interceptors()
     public static java.util.List networkInterceptors()
-    public static okhttp3.Call newCall()
+    public static okhttp3.internal.connection.RealCall newCall()
     public static int pingIntervalMillis()
     public static java.util.List protocols()
     public static java.net.Proxy proxy()
@@ -4374,7 +4396,7 @@ okhttp3.internal.connection.RealCall:
     public static void callStart()
     public static okhttp3.internal.connection.RealCall clone()
     public static okhttp3.Address createAddress()
-    public final void enqueue()
+    public static void enqueue()
     public static void enterNetworkInterceptorExchange()
     public static okhttp3.OkHttpClient getClient()
     public static okhttp3.internal.connection.RealConnection getConnection()
@@ -4473,7 +4495,7 @@ okhttp3.internal.http.HttpMethod:
     public static boolean redirectsToGet()
     public static boolean redirectsWithBody()
 okhttp3.internal.http.RealInterceptorChain:
-    public static okhttp3.Call call()
+    public static okhttp3.internal.connection.RealCall call()
     public static okhttp3.internal.http.RealInterceptorChain copy$okhttp()
     public static okhttp3.internal.connection.RealCall getCall$okhttp()
     public static int getConnectTimeoutMillis$okhttp()

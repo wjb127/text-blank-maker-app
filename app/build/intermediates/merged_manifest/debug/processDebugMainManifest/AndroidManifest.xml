@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.textblankmaker"
-    android:versionCode="1"
+    package="com.seungbeen.textblankmaker"
+    android:versionCode="3"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -11,24 +11,26 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
-        android:name="com.example.textblankmaker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.seungbeen.textblankmaker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.textblankmaker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.seungbeen.textblankmaker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
         android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.TextBlankMaker" >
         <activity
-            android:name="com.example.textblankmaker.SplashActivity"
+            android:name="com.seungbeen.textblankmaker.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.TextBlankMaker.NoActionBar" >
             <intent-filter>
@@ -38,12 +40,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.textblankmaker.MainActivity"
+            android:name="com.seungbeen.textblankmaker.MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="privacy_policy_url"
+            android:value="https://github.com/wjb127/text-blank-maker-app" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.textblankmaker.androidx-startup"
+            android:authorities="com.seungbeen.textblankmaker.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

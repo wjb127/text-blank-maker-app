@@ -4,14 +4,14 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.textblankmaker",
+  "applicationId": "com.seungbeen.textblankmaker",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
+      "versionCode": 3,
       "versionName": "1.0",
       "outputFile": "AndroidManifest.xml"
     }
